@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: module-shop
+  profiles:
+    active: product
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+module:
+  config:
+    user:
+      address: http://localhost:8082
